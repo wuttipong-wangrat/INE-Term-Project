@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบลงทะเบียนสอบโครงงาน</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col h-screen items-center justify-center space-y-6">
+        <h1 class="text-3xl">เข้าสู่ระบบ</h1>
+        <div class="card bg-base-200 w-96 shadow-sm">
+            <form class="card-body">
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">ชื่อผู้ใช้</legend>
+                    <input type="text" placeholder="ชื่อผู้ใช้" required class="input input-bordered w-full focus:outline-none">
+                </fieldset>
+                <fieldset class="fieldset mb-4">
+                    <legend class="fieldset-legend">รหัสผ่าน</legend>
+                    <input type="password" placeholder="รหัสผ่าน" required class="input input-bordered w-full focus:outline-none">
+                </fieldset>
+                <div class="flex w-full flex-col space-y-3">
+                    <a href="index.html" class="btn btn-primary text-white">เข้าสู่ระบบ</a>
+                    <a href="index.html" class="btn btn-primary text-white">ICIT Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

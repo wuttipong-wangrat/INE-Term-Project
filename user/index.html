@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cmyk">
+<html lang="en" data-theme="corporate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,19 +20,40 @@
                 <ul class="menu menu-horizontal gap-x-2">
                     <li><a href="index.html">หน้าหลัก</a></li>
                     <li><a href="login.html">เข้าสู่ระบบ</a></li>
-                    <li><a href="register.html">ลงทะเบียน</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Content -->
-    <main class="flex-1 grid md:grid-cols-[250px_1fr] grid-cols-1 h-screen">
-        <div class="bg-red-500">
-            hello
-        </div>
-        <div class="bg-blue-500">
-            yo
+    <main class="hero min-h-screen bg-base-300">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-3xl">ระบบลงทะเบียนสอบโครงงาน</h1>
+                <p class="py-6">สําหรับนักศึกษาสาขาเทคโนโลยีและการจัดการอุตสาหกรรม</p>
+                <form class="flex flex-col text-left space-y-3">
+                    <div>
+                        <fieldset class="fieldset">
+                            <legend class="fieldset-legend">ชื่อโครงงาน</legend>
+                            <input type="text" placeholder="ชื่อโครงงาน" class="input input-bordered w-full focus:outline-none" required>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <legend class="fieldset-legend">จำนวนสมาชิก</legend>
+                            <select class="select select-bordered w-full" required>
+                                <option value="1" selected>1 คน</option>
+                                <option value="2">2 คน</option>
+                            </select>
+                            <p class="label">จำนวนสมาชิกไม่เกิน 2 คน</p>
+                        </fieldset>
+                    </div>
+                    <div class="w-full flex justify-end space-x-3">
+                        <input type="reset" value="ยกเลิก" class="btn btn-error text-white">
+                        <a href="detail.html">
+                            <input type="submit" value="ลงทะเบียน" class="btn btn-success text-white">
+                        </a>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
